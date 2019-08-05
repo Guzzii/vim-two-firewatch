@@ -353,7 +353,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Number',         s:duo_2,                '',          '')
   call <sid>X('Boolean',        s:duo_2,                '',          '')
   call <sid>X('Float',          s:duo_2,                '',          '')
-  call <sid>X('Identifier',     s:uno_3,                '',          'none')
+  call <sid>X('Identifier',     s:uno_3,                '',          'italic')
   call <sid>X('Function',       s:uno_2,                '',          '')
   call <sid>X('Statement',      s:duo_1,                '',          'none')
   call <sid>X('Conditional',    s:syntax_accent,        '',          '')
@@ -363,8 +363,8 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Keyword',        s:uno_1,                '',          '')
   call <sid>X('Exception',      s:uno_1,                '',          '')
   call <sid>X('PreProc',        s:uno_1,                '',          '')
-  "call <sid>X('Include',        s:duo_2,                '',          '')
-  "call <sid>X('Define',         s:duo_2,                '',          'none')
+  call <sid>X('Include',        s:duo_2,                '',          '')
+  call <sid>X('Define',         s:duo_2,                '',          'none')
   "call <sid>X('Macro',          s:uno_3,                '',          '')
   "call <sid>X('PreCondit',      'ff0000',               '',          '')
   call <sid>X('Type',           s:duo_1,                '',          'none')
@@ -639,6 +639,23 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('rubySymbol',                    s:duo_1,         '', '')
   " }}}
 
+  " Ruby highlighting -------------------------------------------------------{{{
+  call <sid>X('pythonFunction', s:uno_1, '', '')
+  call <sid>X('pythonDecorator', s:syntax_accent, '', '')
+  call <sid>X('pythonDottedName', s:syntax_accent, '', '')
+  call <sid>X('pythonKeyword', s:duo_1, '', 'italic')
+  call <sid>X('pythonModule', s:uno_3, '', '')
+  call <sid>X('pythonClass', s:uno_3, '', '')
+  call <sid>X('pythonLogLevel', s:uno_3, '', '')
+  call <sid>X('pythonStatement', s:duo_1, '', 'bold')
+  call <sid>X('pythonException', s:uno_1, '', 'bold')
+  call <sid>X('pythonFloat', s:duo_2, '', 'italic')
+  call <sid>X('pythonNumber', s:duo_2, '', 'italic')
+  call <sid>X('pythonBoolean', s:duo_2, '', 'italic')
+  
+  
+  " }}}
+  "
   " Spelling highlighting ---------------------------------------------------{{{
   call <sid>X('SpellBad',     '', s:syntax_bg, 'undercurl')
   call <sid>X('SpellLocal',   '', s:syntax_bg, 'undercurl')
