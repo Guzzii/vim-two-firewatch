@@ -259,7 +259,8 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
     let s:syntax_cursor_line      = 'F3EFE7'
   else
     let s:uno_1 = 'd6e9ff'
-    let s:uno_2 = 'abb2bf'
+    " let s:uno_2 = 'abb2bf'
+    let s:uno_2 = '91C1F8'
     let s:uno_3 = '6e88a6'
     let s:uno_4 = '55606d'
 
@@ -272,7 +273,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
     let s:syntax_color_modified = 'e0c285'
     let s:syntax_color_removed  = 'e05252'
 
-    let s:syntax_fg               = s:uno_2
+    let s:syntax_fg               = 'abb2bf'
     let s:syntax_bg               = '282c34'
     let s:syntax_accent           = '56b6c2'
     let s:syntax_gutter           = '636d83'
