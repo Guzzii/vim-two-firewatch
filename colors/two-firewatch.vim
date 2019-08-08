@@ -354,7 +354,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('Number',         s:duo_2,                '',          '')
   call <sid>X('Boolean',        s:duo_2,                '',          '')
   call <sid>X('Float',          s:duo_2,                '',          '')
-  call <sid>X('Identifier',     s:uno_3,                '',          'italic')
+  call <sid>X('Identifier',     s:uno_2,                '',          'italic')
   call <sid>X('Function',       s:uno_2,                '',          '')
   call <sid>X('Statement',      s:duo_1,                '',          'none')
   call <sid>X('Conditional',    s:syntax_accent,        '',          '')
@@ -640,7 +640,7 @@ if has('gui_running') || &t_Co == 88 || &t_Co == 256
   call <sid>X('rubySymbol',                    s:duo_1,         '', '')
   " }}}
 
-  " Ruby highlighting -------------------------------------------------------{{{
+  " Python highlighting -------------------------------------------------------{{{
   call <sid>X('pythonFunction', s:uno_1, '', '')
   call <sid>X('pythonDecorator', s:syntax_accent, '', '')
   call <sid>X('pythonDottedName', s:syntax_accent, '', '')
